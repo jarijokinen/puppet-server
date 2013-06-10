@@ -4,16 +4,16 @@ class s_server {
   include "chkrootkit"
   include "grsecurity"
   include "grub"
-  include "iptables"
+  #include "iptables"
   include "locales"
   include "logcheck"
   include "logwatch"
   include "ntp"
-  include "puppet"
+  #include "puppet"
   include "rkhunter"
   include "ssh::client"
   include "ssh::server"
-  include "tcpd"
+  #include "tcpd"
   include "timezone"
   
   # Utils
@@ -27,7 +27,7 @@ class s_server {
     ensure => purged
   }
 
-  iptables::module { "ntp": }
-  iptables::module { "resolvers": }
-  iptables::module { "ssh": }
+  #iptables::module { "ntp": }
+  #iptables::module { "resolvers": }
+  #iptables::module { "ssh": }
 }
