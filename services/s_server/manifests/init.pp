@@ -10,6 +10,7 @@ class s_server {
   include "logcheck"
   include "logwatch"
   include "ntp"
+  include "postfix"
   #include "puppet"
   include "rkhunter"
   include "ssh::client"
