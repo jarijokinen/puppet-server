@@ -2,6 +2,7 @@ class s_server {
   # Base
   include "apt"
   include "chkrootkit"
+  include "fail2ban"
   include "grsecurity"
   include "grub"
   #include "iptables"
